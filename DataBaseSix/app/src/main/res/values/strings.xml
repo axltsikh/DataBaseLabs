@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DataBaseSix</string>
+    <string name="FirstN">Имя</string>
+    <string name="LastN">Фамилия</string>
+    <string name="Phone">Телефон</string>
+    <string name="Bday">День рождения</string>
+    <string name="Find">Поиск</string>
+    <string name="Save">Сохранить</string>
+    <string name="DatePick">Выберите дату рождения</string>
+    <string name="Return">Вернуться</string>
+    <string name="NamesFind">Введите имя или фамилию</string>
+</resources>

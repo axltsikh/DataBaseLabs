@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DataBaseLab4</string>
+    <string name="Surname">Фамилия</string>
+    <string name="Name">Имя</string>
+    <string name="Input">Ввод</string>
+    <string name="FileContent">Содержимое файла:</string>
+</resources>
