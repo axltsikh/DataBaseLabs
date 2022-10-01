@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="25dp"
+        android:maxDate="31-11-2022"
         android:calendarViewShown="false"
         android:datePickerMode="spinner"
         android:hint="@string/Bday"

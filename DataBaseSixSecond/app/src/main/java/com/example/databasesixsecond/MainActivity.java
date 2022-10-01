@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
 import android.util.Log;
+import android.view.View;
 import android.widget.DatePicker;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,19 +38,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         verifyStoragePermissions(this);
-        Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
-        Uri uri = Uri.fromParts("package", getPackageName(), null);
-        intent.setData(uri);
-        startActivity(intent);
+//        Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION);
+//        Uri uri = Uri.fromParts("package", getPackageName(), null);
+//        intent.setData(uri);
+//        startActivity(intent);
         FileGetter();
-        TextView text=findViewById(R.id.Output);
-        TextView textt=findViewById(R.id.textView);
-        Item item=items.get(2);
-        for(Item a: items) {
-            textt.append("День объекта: " + String.valueOf(a.bday.getDay()) + "\r\n" +
-                    "Месяц объекта: " + String.valueOf(a.bday.getMonth()) + "\r\n" +
-                    "Год объекта: " + String.valueOf(a.bday.getYear()) + "\r\n");
-        }
         DatePicker date=findViewById(R.id.datePicker);
         date.init(date.getYear(), date.getMonth(), date.getDayOfMonth(), new DatePicker.OnDateChangedListener() {
             @Override
@@ -82,7 +75,11 @@ public class MainActivity extends AppCompatActivity {
             Log.d("ExceptionLog",e.getMessage());
         }
     }
-
+    public void AllOnClick(View view){
+        Intent intent=new Intent(this,AllActivity.class);
+        intent.putExtra("all",items);
+        startActivity(intent);
+    }
 
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
     private static String[] PERMISSIONS_STORAGE = {

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DataBaseFive</string>
+    <string name="Key">Ключ</string>
+    <string name="Value">Значение</string>
+    <string name="Save">Сохранить</string>
+    <string name="Get">Получить значение</string>
+</resources>

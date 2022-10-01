@@ -46,15 +46,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void FileChecker(){
+        File ff=new File(super.getFilesDir(),fName);
         File f=new File(Environment.getExternalStoragePublicDirectory (Environment.DIRECTORY_DOCUMENTS),fName);
-        if(f.exists()){
-            Toast toast= Toast.makeText(this,f.getPath().toString(),Toast.LENGTH_LONG);
-            toast.show();
+        if(f.exists() && ff.exists()){
+
         }
         else {
             try{
+                ff.createNewFile();
                 f.createNewFile();
-                Toast toast= Toast.makeText(this,"Файл успешно создан",Toast.LENGTH_LONG);
+                Toast toast= Toast.makeText(this,"Файлы успешно созданы",Toast.LENGTH_LONG);
                 toast.show();
             }
             catch(Exception e){
@@ -64,13 +65,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void allowButtonClick(View view){
-        EditText editText=findViewById(R.id.FirstName);
+        EditText name=findViewById(R.id.FirstName);
+        EditText lname=findViewById(R.id.LastName);
+        EditText phone=findViewById(R.id.Phone);
+        if(name.getText().toString().equals("") || phone.getText().toString().equals("") || lname.getText().toString().equals("")){
+            Toast toast=Toast.makeText(this,"Заполните поля",Toast.LENGTH_LONG);
+            toast.show();
+            return;
+        }
         Item item=new Item();
-        item.FirstName=editText.getText().toString();
-        editText=findViewById(R.id.LastName);
-        item.LastName=editText.getText().toString();
-        editText=findViewById(R.id.Phone);
-        item.Phone=editText.getText().toString();
+        item.FirstName=name.getText().toString();
+        item.LastName=lname.getText().toString();
+        item.Phone=phone.getText().toString();
         DatePicker datePicker=findViewById(R.id.Bday);
         item.bday=new Date(datePicker.getYear()-1900,datePicker.getMonth(),datePicker.getDayOfMonth());
         items.add(item);
@@ -78,9 +84,6 @@ public class MainActivity extends AppCompatActivity {
         Serialize();
     }
 
-    public void dismissButtonClick(View view){
-        Clear();
-    }
 
     public void Serialize(){
         GsonBuilder builder=new GsonBuilder();
@@ -89,8 +92,11 @@ public class MainActivity extends AppCompatActivity {
             String str=gson.toJson(items);
             BufferedWriter bw=new BufferedWriter(new FileWriter(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),fName)));
             bw.write(str);
-            Log.d("ExceptionLog",str);
             bw.close();
+            bw=new BufferedWriter(new FileWriter(new File(super.getFilesDir(),fName)));
+            bw.write(str);
+            bw.close();
+            Log.d("ExceptionLog",str);
 
         }
         catch(Exception e){

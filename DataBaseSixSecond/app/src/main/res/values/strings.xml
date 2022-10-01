@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DataBaseSixSecond</string>
+    <string name="Date">Выберите дату рождения:</string>
+    <string name="Variants">Подходящие варианты</string>
+    <string name="Contacts">Все контакты</string>
+    <string name="Return">Вернуться</string>
 </resources>

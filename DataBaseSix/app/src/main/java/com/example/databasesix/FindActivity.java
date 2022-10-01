@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
@@ -39,7 +40,7 @@ public class FindActivity extends AppCompatActivity {
             TextView textView=findViewById(R.id.output);
             textView.setText("");
             for(Item a: items){
-                if(pattern.matcher(a.FirstName).find() || pattern.matcher(a.LastName).find()){
+                if(pattern.matcher(a.FirstName.toLowerCase()).find() || pattern.matcher(a.LastName.toLowerCase()).find()){
                     textView.append("Имя: " + a.FirstName + "\r\n");
                     textView.append("Фамилия: " + a.LastName + "\r\n");
                     textView.append("Телефон: " + a.Phone + "\r\n");
