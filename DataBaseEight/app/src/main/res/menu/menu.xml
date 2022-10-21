@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/thisDateTasks"
+        android:title="@string/Tasks"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/Category"
+        android:title="@string/Category"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/All"
+        android:title="@string/Main"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/Xpath"
+        app:showAsAction="always"
+        android:title="@string/Xpath"/>
+    <item
+        android:id="@+id/Xslt"
+        app:showAsAction="always"
+        android:title="@string/XsLT"/>
+</menu>

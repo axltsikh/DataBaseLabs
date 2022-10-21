@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Category">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/CategoryList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <EditText
+        android:layout_margin="15dp"
+        android:id="@+id/CategoryText"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/CategoryList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <Button
+        android:onClick="SaveButtonClickOnClick"
+        android:layout_margin="35dp"
+        android:id="@+id/SaveButton"
+        android:text="@string/save"
+        app:layout_constraintTop_toBottomOf="@id/CategoryText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:onClick="DeleteButtonOnClick"
+        android:layout_margin="15dp"
+        android:id="@+id/DeleteButton"
+        android:text="@string/delete"
+        app:layout_constraintTop_toBottomOf="@id/SaveButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

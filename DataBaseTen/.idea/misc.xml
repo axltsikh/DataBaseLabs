@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/drawable/changehead.xml" value="0.1" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/drawable/changeheadicon.xml" value="0.1" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/drawable/groupaddicon.xml" value="0.1" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/activity_main.xml" value="0.20989583333333334" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_add_head.xml" value="0.2" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_addgroup.xml" value="0.20989583333333334" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_addstudent.xml" value="0.1" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_all_groups.xml" value="0.1" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_blank.xml" value="0.20989583333333334" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_dashboard.xml" value="0.20989583333333334" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_home.xml" value="0.14" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/fragment_notifications.xml" value="0.20989583333333334" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/layout/list_item.xml" value="0.1" />
+        <entry key="..\:/University/STPMS/DataBaseTen/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20989583333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

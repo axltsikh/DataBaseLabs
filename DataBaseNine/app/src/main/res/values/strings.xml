@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DataBaseNine</string>
+    <string name="ID">ID</string>
+    <string name="F">F</string>
+    <string name="T">T</string>
+    <string name="Insert">INSERT</string>
+    <string name="Select">SELECT</string>
+    <string name="SelectRaw">SELECT RAW</string>
+    <string name="Update">UPDATE</string>
+    <string name="Delete">DELETE</string>
+</resources>

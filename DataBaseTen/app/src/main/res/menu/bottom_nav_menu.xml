@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/mainpageicon"
+        android:title="Все группы" />
+
+    <item
+        android:id="@+id/navigation_student"
+        android:icon="@drawable/studentaddicon"
+        android:title="@string/title_dashboard" />
+
+    <item
+        android:id="@+id/navigation_group"
+        android:icon="@drawable/groupaddicon"
+        android:title="@string/title_notifications" />
+    <item
+        android:id="@+id/navigation_head"
+        android:icon="@drawable/changehead"
+        android:title="Изменить старосту"/>
+    <item
+        android:id="@+id/navigation_allgroups"
+        android:icon="@drawable/mainpageicon"
+        android:title="Все группы"/>
+
+</menu>

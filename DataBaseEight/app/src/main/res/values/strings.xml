@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">DataBaseEight</string>
+    <string name="add">Добавить</string>
+    <string name="save">Сохранить</string>
+    <string name="delete">Удалить</string>
+    <string name="Main">Главная</string>
+    <string name="Tasks">Задачи</string>
+    <string name="Category">Категории</string>
+    <string name="DescriptionTask">Текст задачи</string>
+    <string name="Xpath">Xpath</string>
+    <string name="CreateXSLT">Создать XSLT</string>
+    <string name="XsLT">XSLT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
