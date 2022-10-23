@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             noteBuffer.NoteDate=calendarDate;
             noteBuffer.NoteText=text.getText().toString();
             notes.add(noteBuffer);
-
+            Serialize();
         }
         else{
             if(notes.size()>9){
@@ -101,6 +101,12 @@ public class MainActivity extends AppCompatActivity {
     public void DeleteButtonOnClick(View view){
         notes.remove(note);
         Serialize();
+        EditText text=findViewById(R.id.NoteText);
+        Button save=findViewById(R.id.AddButton);
+        Button deleteButton=findViewById(R.id.DeleteButton);
+        save.setText(R.string.add);
+        deleteButton.setVisibility(View.INVISIBLE);
+        text.setText("");
         Finder();
     }
     public void FileChecker(){
