@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.thirdQuery">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:hint="Начало периода"
+            android:layout_gravity="center"
+            android:id="@+id/BeginThirdQueryEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Конец периода"
+            android:layout_gravity="center"
+            android:id="@+id/EndThirdQueryEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@+id/ThirdQuerySpinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:text="Третий запрос"
+            android:layout_gravity="center"
+            android:id="@+id/ThirdQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/ThirdResultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

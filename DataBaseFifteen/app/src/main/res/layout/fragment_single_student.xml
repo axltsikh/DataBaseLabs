@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SingleStudentFragment">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:hint="Введите ID группы"
+            android:id="@+id/getSingleStudentGroupID"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите ID студента"
+            android:layout_gravity="center"
+            android:id="@+id/getSingleStudentStudentID"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/getSingleStudentButton"
+            android:layout_gravity="center"
+            android:text="Студент s групппы g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/deleteSingleStudentButton"
+            android:layout_gravity="center"
+            android:text="Удалить студента"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/getSingleStudentOutput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/IDToChangeStudentName"
+            android:layout_gravity="center"
+            android:hint="Введите ID изменяемого студента"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите новое имя"
+            android:layout_gravity="center"
+            android:id="@+id/changeStudentNameEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/changeStudentNameButton"
+            android:layout_gravity="center"
+            android:text="Изменить"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Введите ID группы"
+            android:layout_gravity="center"
+            android:id="@+id/studentGroupID"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите имя студента"
+            android:layout_gravity="center"
+            android:id="@+id/studentName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите дату рождения"
+            android:layout_gravity="center"
+            android:id="@+id/studentBirthday"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите адрес студента"
+            android:layout_gravity="center"
+            android:id="@+id/studentAdress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/addStudentButton"
+            android:layout_gravity="center"
+            android:text="Добавить студента"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/FirstQueryMenu"
+        android:title="First"
+        />
+    <item
+        android:id="@+id/SecondQueryMenu"
+        android:title="Second"
+        />
+    <item
+        android:id="@+id/ThirdQueryMenu"
+        android:title="Third"/>
+    <item
+        android:id="@+id/FourthQueryMenu"
+        android:title="Fourth"/>
+    <item
+        android:id="@+id/FifthQueryMenu"
+        android:title="Fifth"/>
+</menu>

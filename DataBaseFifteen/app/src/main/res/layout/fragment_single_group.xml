@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.SingleGroupFragment">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:hint="ID группы"
+            android:layout_gravity="center"
+            android:id="@+id/singleGroupNumber"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/getSingleGroupButton"
+            android:layout_gravity="center"
+            android:text="Группа"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/deleteSingleGroupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить группу"/>
+        <TextView
+
+            android:id="@+id/singleGroupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите ID изменяемой группы"
+            android:layout_gravity="center"
+            android:id="@+id/changeGroupIDOld"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите новый ID"
+            android:layout_gravity="center"
+            android:id="@+id/changeGroupIDNew"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите нового старосту"
+            android:layout_gravity="center"
+            android:id="@+id/changeGroupHead"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Изменить группу"
+            android:layout_gravity="center"
+            android:id="@+id/changeGroupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите факультет"
+            android:layout_gravity="center"
+            android:id="@+id/addGroupFaculty"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите курс"
+            android:layout_gravity="center"
+            android:id="@+id/addGroupCourse"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите имя группы"
+            android:layout_gravity="center"
+            android:id="@+id/addGroupName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Введите старосту группы"
+            android:layout_gravity="center"
+            android:id="@+id/addGroupHead"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Добавить группу"
+            android:layout_gravity="center"
+            android:id="@+id/addGroupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

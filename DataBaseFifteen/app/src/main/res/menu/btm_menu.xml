@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allGroupsMenu"
+        android:title="first"
+        />
+    <item
+        android:id="@+id/currentGroups"
+        android:title="second"
+        />
+    <item
+        android:id="@+id/allStudents"
+        android:title="third"
+        />
+    <item
+        android:id="@+id/currentStudents"
+        android:title="fourth"
+        />
+</menu>

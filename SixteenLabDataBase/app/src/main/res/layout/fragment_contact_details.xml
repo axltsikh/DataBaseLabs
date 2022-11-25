@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ContactDetailsFragment">
+    <data>
+        <variable
+            name="Contact"
+            type="com.example.sixteenlabdatabase.Contact" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:text="@={Contact.Name}"
+            android:layout_gravity="center"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameDetails"
+            />
+        <EditText
+            android:text="@={Contact.Phone}"
+            android:id="@+id/DescriptionDetails"
+            android:layout_gravity="center"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/updateButton"
+            android:text="@string/saveChanges"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/deleteButton"
+            android:text="@string/deleteButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>

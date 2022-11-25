@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.firstQuery">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:hint="Начало периода"
+            android:layout_gravity="center"
+            android:id="@+id/BeginFirstEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Конец периода"
+            android:layout_gravity="center"
+            android:id="@+id/EndFirstEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@+id/FirstQuerySpinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="20sp"
+                android:text="ID группы:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Spinner
+                android:id="@+id/GroupIDSpinner"
+                android:layout_width="120dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+        <Button
+            android:text="Первый запрос"
+            android:layout_gravity="center"
+            android:id="@+id/FirstQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/FirstResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

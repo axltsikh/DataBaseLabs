@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.secondQuery">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:hint="Начало периода"
+            android:layout_gravity="center"
+            android:id="@+id/BeginSecondEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Конец периода"
+            android:layout_gravity="center"
+            android:id="@+id/EndSecondEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@+id/SecondQuerySpinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:text="Второй запрос"
+            android:layout_gravity="center"
+            android:id="@+id/SecondQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/SecondResultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>

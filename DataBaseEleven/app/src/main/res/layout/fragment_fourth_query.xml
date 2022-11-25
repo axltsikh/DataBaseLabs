@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.fourthQuery">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:hint="Начало периода"
+            android:layout_gravity="center"
+            android:id="@+id/BeginFourthEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:hint="Конец периода"
+            android:layout_gravity="center"
+            android:id="@+id/EndFourthEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@+id/FourthQuerySpinner"
+            android:layout_width="300dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:text="Четвёртый запрос"
+            android:layout_gravity="center"
+            android:id="@+id/FourthQuery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/FourthResultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</FrameLayout>
