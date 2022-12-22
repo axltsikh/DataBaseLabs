@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.AddFragment">
+    <data>
+        <variable
+            name="Person"
+            type="com.example.databaseseventeen.Person" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/FirstNameText"
+            android:text="@={Person.FirstName}"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/SecondNameText"
+            android:text="@={Person.SecondName}"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/ageText"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:text="@={Person.personData.Phone}"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:text="@={Person.personData.Email}"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Добавить"
+            android:id="@+id/addButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Добавить в БД"
+            android:id="@+id/addAllButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:text="Вызов функции"
+            android:id="@+id/functionButton"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/functionResultText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</layout>
